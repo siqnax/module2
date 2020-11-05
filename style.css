@@ -1,51 +1,68 @@
+ *{box-sizing: border-box; 
+     }
+	
 h1{
-  color :red;
+     color :red;
 }
 
 h2 {
+	 position : relative;
+	left : 800px;
 	color: #569718;
-   text-align : right; 
+    border: 1px solid black;
+    padding : 10px 10px 10px 0px; 
+    background-color : #120065;
     }
 
 
 
-section { background-color : #f2f2f2;         
-                 float: left; 
-                width : 300px;
-                height : 600px;
+section { background-color : #f2f2f2;                         
+              
+                height : auto; 
                 border: 1px solid black; 
                 margin-right : 5px;
-              /*  box-sizing: border-box; */
+               overflow : hidden; 
                 
 }
 
 
 
 
-/* Mobile phones (portrait and landscape) ---------- */
+/* Mobile phones (portrait and landscape) ----------  */
 @media (max-width: 767px){
-    section {
-        width: 100%;
-        padding: 0 10px;
-    }
-}
+section {
+  width: 70%; 
+  padding: 50px;
+} 
+
+
+
 /* Tablets and iPads (portrait and landscape) ---------- */
 @media (min-width: 768px) and (max-width: 991px){
-    #p1, p2 {
-        width: 50%;
-        padding: 0 10px;
-        float : left;
-    }
+ section{
+  padding: 50px; 
 }
 
+#p1 #p2{
+                width : 50%;
+                 float : left; 
+	           }
+	
+#p3 {
+	       clear : left; 
+          width : 80%; 
+	     }
 
-/* High resolution desktops and laptops ---------- */
+
+
+
+
+/* High resolution desktops and laptops ----------  */
 @media (min-width: 992px) {
 section {
-        width: 50%; 
-        padding: 0 20px;
-        float : left;
-    }
+  float: left;
+  width: 33.33%; 
+  padding: 50px; 
 }
 
 
